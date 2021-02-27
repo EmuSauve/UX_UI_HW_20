@@ -1,0 +1,301 @@
+/* Styles used for case study pages */
+
+
+/* Bootstrap style reset */
+dl, ol, ul {
+    margin-bottom: 0;
+}
+
+ol, ul {
+    padding-left: 0;
+}
+
+p {
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 0;
+}
+
+/* Common case study section style*/
+.caseStudySection {
+    margin-top: 60px;
+    padding: 30px 0;
+}
+
+.responsiveFlexBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.twoColumnFlexChild {
+    width: 48%;
+}
+
+.threeColumnFlexChild {
+    width: 32%;
+}
+
+.sectionTitleLeft {
+    width: 25%;
+}
+
+.sectionContentRight {
+    width: 73%;
+}
+
+.sectionContentRight ol{
+    margin-left: 15px;
+}
+
+.sectionContentRight img{
+    width: 100%;
+}
+
+.sectionContentStyledText {
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+}
+
+.marginBottomBig {
+    margin-bottom: 70px;
+}
+
+.marginBottomSmall {
+    margin-bottom: 30px;
+}
+
+
+
+/* Title section */
+.titleSectionEva .contentMaxWidth{
+    align-items: center;
+    padding: 40px 0;
+}
+
+.titileSectionCopy {
+    width: 40%;
+}
+
+.titileSectionCopy img {
+    margin-bottom: 30px;
+}
+
+.titileSectionCopy p {
+    color: white;
+}
+
+.titleSectionImage {
+    width: 60%;
+}
+
+/* Bootstrap carousel style */
+.carousel-indicators {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.carousel-indicators button {
+    width: 10px!important;
+    height: 10px!important;
+    border-radius: 50%;
+}
+
+.carousel-control-prev,.carousel-control-next {
+    width: auto;
+}
+
+
+/* About Section */
+
+
+/* Process Section */
+.processSection {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.secondNavigation {
+    padding: 0 !important;
+}
+
+.secondNavContainer {
+    padding: 0;
+}
+
+.secondNavContainer .nav-item{
+    margin-right: 40px;
+}
+
+.secondNavContainer .nav-link{
+    padding: 0 !important;
+}
+
+.secondNavContainer .navbar-toggler{
+    margin-bottom: 0;
+    padding: 3px 5px;
+}
+
+.secondNavContainer .navbar-toggler:focus{
+    box-shadow: none;
+}
+
+/* Research & definition Section */
+
+
+/* Ideation Section */
+.featureBox {
+    background-color: #8FC0A9;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+/* Prototyping & testing Section */
+.threeColumnFlexChildWithArrow,.threeColumnFlexChildWithArrowHalf {
+    width: 47%;
+}
+
+.threeColumnFlexChildArrow,.threeColumnFlexChildArrowHalf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3%;
+    margin-bottom: 90px;
+}
+
+.threeColumnFlexChildArrow,.threeColumnFlexChildArrowHalf img{
+    width: 20px;
+}
+
+/* Result Section */
+.prototypeBox .responsiveFlexBox{
+    align-items: center;
+}
+
+.prototypeBox .responsiveFlexBox img{
+    width: 80%;
+}
+
+
+
+/* Media query */
+
+/* Smaller desktop(less than 1171px) */
+/* For Bootstrap nav style*/
+@media only screen and (max-width: 1170.98px) {
+
+    /* Process Section */
+    .secondNavContainer .nav-item{
+        margin-right: 13px;
+    }
+
+}
+
+/* Tablets(less than 992px) */
+@media only screen and (max-width: 991.98px) {
+
+    /* Process Section */
+    .secondNavContainer .nav-item{
+        margin-top: 10px;
+        margin-right: 0px;
+    }
+
+    /* Prototyping & testing Section */
+    .threeColumnFlexChildArrow,.threeColumnFlexChildArrowHalf img {
+        width: 15px;
+    }
+}
+
+/* Phones(less than 768px) */
+@media only screen and (max-width: 767.98px) {
+
+    .responsiveFlexBox {
+        flex-direction: column;
+    }
+
+    .sectionTitleLeft {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .sectionContentRight {
+        width: 100%;
+    }
+
+    .titileSectionCopy,.titleSectionImage,.twoColumnFlexChild,.threeColumnFlexChild,.threeColumnFlexChildWithArrow {
+        width: 100%;
+    }
+    
+    .sectionContentStyledText {
+        font-size: 22px;
+    }
+
+    /* Title section */
+    .titileSectionCopy {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .titileSectionCopy img{
+        width: 150px;
+    }
+
+    /* Process Section */
+    .processSection .responsiveFlexBox {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .processSection .sectionTitleLeft {
+        width: 30%;
+        margin-bottom: 0;
+    }
+
+    .processSection .sectionContentRight {
+        text-align: right;
+    }
+
+    .secondNavContainer {
+        justify-content: flex-end !important;
+    }
+
+    /* Ideation Section */
+    .featureBox {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Prototyping & testing Section  */
+    .twoColumnFlexChildRow {
+        flex-direction: row;
+    }
+
+    .threeColumnFlexChildArrow {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .threeColumnFlexChildArrow img {
+        width: 3%;
+        transform: rotate(90deg);
+    }
+
+    /* Result Section */
+    .prototypeBox {
+        text-align: center;
+    }
+
+    .prototypeBox .responsiveFlexBox img{
+        width: 60%;
+    }
+
+}
+
+
+
+
